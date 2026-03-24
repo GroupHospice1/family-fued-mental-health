@@ -131,14 +131,17 @@ export default function App() {
   };
 
   return (
-    <div style={{ minHeight: "100vh", background: "#eef2ff", padding: 24 }}>
+    <div style={{ minHeight: "100vh", "linear-gradient(135deg, #c7d2fe, #e9d5ff)"}}>
       <div
         style={{
           maxWidth: 900,
           margin: "auto",
           background: "#fff",
           padding: 24,
-          borderRadius: 12
+          borderRadius: 12,
+          boxShadow: "0 10px 25px rgba(0, 0, 0, 0.1)"
+          ``
+
         }}
       >
         <h1 style={{ textAlign: "center" }}>Mental Health Family Feud</h1>
