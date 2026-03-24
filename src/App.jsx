@@ -137,9 +137,11 @@ export default function App() {
           maxWidth: 900,
           margin: "auto",
           background: "#fff",
+          backgroundColor: "#1e293b", // dark slate
+          color: "#f8fafc",           // off‑white text
           padding: 24,
           borderRadius: 12,
-          boxShadow: "0 10px 25px rgba(0, 0, 0, 0.1)"
+          boxShadow: "0 10px 30px rgba(0,0,0,0.35)"
           ``
 
         }}
@@ -161,7 +163,13 @@ export default function App() {
               display: "block",
               width: "100%",
               margin: "8px 0",
-              padding: 10
+              padding: 12,
+              backgroundColor: revealed[i] ? "#334155" : "#0f172a",
+              color: "#f8fafc",
+              border: "1px solid #475569",
+              borderRadius: 8,
+              cursor: hostView ? "pointer" : "default"
+
             }}
           >
             {revealed[i] || !hostView ? `${a.text} – ${a.points}` : "Hidden"}
