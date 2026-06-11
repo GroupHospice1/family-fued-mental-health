@@ -2,21 +2,93 @@ import { useState } from "react";
 
 const QUESTIONS = [
   {
-    question: "Name something that helps teens feel calmer when stressed",
+    question: "What is something at home that annoys you?",
     answers: [
-      { text: "Listening to music", points: 40 },
-      { text: "Talking to a friend", points: 30 },
-      { text: "Deep breathing", points: 20 },
-      { text: "Going for a walk", points: 10 }
+      { text: "Constant Arguing", points: 40 },
+      { text: "Siblings", points: 30 },
+      { text: "Dogs Barking", points: 20 },
+      { text: "Messiness", points: 10 }
     ]
   },
   {
-    question: "Name something teens can do when they feel overwhelmed",
+    question: "Least favorite weather condition to drive in?",
     answers: [
-      { text: "Grounding (5-4-3-2-1)", points: 35 },
-      { text: "Ask for help", points: 30 },
-      { text: "Slow breathing", points: 20 },
-      { text: "Take space safely", points: 15 }
+      { text: "Rain", points: 40 },
+      { text: "Hurricane", points: 30 },
+      { text: "Snow", points: 20 },
+      { text: "Hail", points: 10 }
+    ]
+  },
+  {
+    question: "Name something that annoys everybody.",
+    answers: [
+      { text: "Traffic", points: 40 },
+      { text: "Nasty Food", points: 30 },
+      { text: "Dirty Bathrooms", points: 20 },
+      { text: "Loud/Obnoxious kids", points: 10 }
+    ]
+  },
+  {
+    question: "What is something at school that annoys you?",
+    answers: [
+      { text: "Teachers", points: 40 },
+      { text: "Homework", points: 30 },
+      { text: "School Lunch", points: 20 },
+      { text: "Tardy System", points: 10 }
+    ]
+  },
+  {
+    question: "What exotic reptile pet would everyone like to have?",
+    answers: [
+      { text: "Jumping Spider", points: 40 },
+      { text: "Snake", points: 30 },
+      { text: "Lizard", points: 20 },
+      { text: "Chameleon", points: 10 }
+    ]
+  },
+  {
+    question: "What do all people hate about the week?",
+    answers: [
+      { text: "Mondays", points: 40 },
+      { text: "Work", points: 30 },
+      { text: "School", points: 20 },
+      { text: "Getting up early", points: 10 }
+    ]
+  },
+  {
+    question: "Name one thing teenagers can't live without.",
+    answers: [
+      { text: "Electronics", points: 40 },
+      { text: "Food/Snacks", points: 30 },
+      { text: "Clothes", points: 20 },
+      { text: "Friends", points: 10 }
+    ]
+  },
+  {
+    question: "What are some things that younger kids do that annoy you?",
+    answers: [
+      { text: "Gossip", points: 40 },
+      { text: "Scream", points: 30 },
+      { text: "Touch you without permission", points: 20 },
+      { text: "Eating eveything", points: 10 }
+    ]
+  },
+  {
+    question: "Favorite Subject in School?",
+    answers: [
+      { text: "Art", points: 40 },
+      { text: "English", points: 30 },
+      { text: "Gym/PE", points: 20 },
+      { text: "Science", points: 10 }
+    ]
+  },
+  {
+    question: "What is most well known brand of water",
+    answers: [
+      { text: "Deer Park", points: 35 },
+      { text: "Dasani", points: 30 },
+      { text: "Fuji", points: 20 },
+      { text: "Pure Life", points: 15 }
     ]
   },
   {
