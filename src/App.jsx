@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 
 const QUESTIONS = [
@@ -70,7 +71,7 @@ const QUESTIONS = [
       { text: "Gossip", points: 40 },
       { text: "Scream", points: 30 },
       { text: "Touch you without permission", points: 20 },
-      { text: "Eating eveything", points: 10 }
+      { text: "Eating everything", points: 10 }
     ]
   },
   {
@@ -118,9 +119,6 @@ const QUESTIONS = [
       { text: "Progressive muscle relaxation", points: 10 }
     ]
   },
-
-  // ✅ NEW QUESTIONS (ADDED)
-
   {
     question: "Name something teens can do when thoughts feel out of control",
     answers: [
@@ -203,22 +201,26 @@ export default function App() {
   };
 
   return (
-    <div style={{ minHeight: "100vh", "linear-gradient(135deg, #c7d2fe, #e9d5ff)"}}>
+    <div
+      style={{
+        minHeight: "100vh",
+        background: "linear-gradient(135deg, #c7d2fe, #e9d5ff)"
+      }}
+    >
       <div
         style={{
           maxWidth: 900,
           margin: "auto",
-          background: "#fff",
-          backgroundColor: "#1e293b", // dark slate
-          color: "#f8fafc",           // off‑white text
+          backgroundColor: "#1e293b",
+          color: "#f8fafc",
           padding: 24,
           borderRadius: 12,
           boxShadow: "0 10px 30px rgba(0,0,0,0.35)"
-          ``
-
         }}
       >
-        <h1 style={{ textAlign: "center" }}>Mental Health Family Feud</h1>
+        <h1 style={{ textAlign: "center" }}>
+          Mental Health Family Feud
+        </h1>
 
         <button onClick={() => setHostView((v) => !v)}>
           Switch to {hostView ? "Participant" : "Host"} View
@@ -241,10 +243,11 @@ export default function App() {
               border: "1px solid #475569",
               borderRadius: 8,
               cursor: hostView ? "pointer" : "default"
-
             }}
           >
-            {revealed[i] || !hostView ? `${a.text} – ${a.points}` : "Hidden"}
+            {revealed[i] || !hostView
+              ? `${a.text} – ${a.points}`
+              : "Hidden"}
           </button>
         ))}
 
@@ -255,10 +258,16 @@ export default function App() {
         {hostView && (
           <div style={{ marginTop: 16 }}>
             <button onClick={addStrike}>Buzzer / Strike</button>{" "}
-            <button onClick={() => setActiveTeam(activeTeam === "A" ? "B" : "A")}>
+            <button
+              onClick={() =>
+                setActiveTeam(activeTeam === "A" ? "B" : "A")
+              }
+            >
               Switch Team
             </button>{" "}
-            <button onClick={nextQuestion}>Next Question</button>
+            <button onClick={nextQuestion}>
+              Next Question
+            </button>
           </div>
         )}
 
